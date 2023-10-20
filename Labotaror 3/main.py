@@ -14,7 +14,7 @@ cpd_c = TabularCPD(variable='C', variable_card=2, values=[[0.9995], [0.0005]])
 cpd_i = TabularCPD(variable='I', variable_card=2, values=[[0.99, 0.97], [0.01, 0.03]], #SA FIE INCENDIU FARA CUTREMUR,
                            evidence=['C'], evidence_card=[2])
 cpd_a = TabularCPD(variable='A', variable_card=2,
-                        values=[[0.999, 0.5, 0.8, 0.02], #A=0 CU TOATE COMBINATIILE DE I SI C
+                        values=[[0.999, 0.05, 0.8, 0.02], #A=0 CU TOATE COMBINATIILE DE I SI C
                                 [0.001, 0.95, 0.2, 0.98]], #A=1 CU TOATE COMBINATIILE DE I SI C
                         evidence=['C', 'I'], evidence_card=[2, 2])
 
