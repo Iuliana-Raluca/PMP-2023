@@ -1,5 +1,5 @@
 import pandas as pd
-import pymc as pm
+import pymc3 as pm
 import arviz as az
 
 # incarcarea setului de date
